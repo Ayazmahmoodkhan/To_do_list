@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 70px;
+}
+#name{
+    margin-left: 150px;
+    font-weight: 500;
+}
+
+#msg{
+    align-content: center;
+    align-items: center;
+}
+table{
+    width:70%; 
+}
+#myform{
+    display: inline-block;
+    margin-right: 20%;
+}
