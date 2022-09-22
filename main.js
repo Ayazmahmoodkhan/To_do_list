@@ -1,10 +1,11 @@
 let id="no";
+//localStorage.clear();
 selectData();
 function manageData(){
 	document.getElementById('msg').innerHTML="";
 	let name=document.getElementById('name').value;
 	if(name==''){
-		document.getElementById('msg').innerHTML='Please add your task';
+		document.getElementById('msg').innerHTML='Please enter your name';
 	}else{
 		console.log(id);
 		if(id=='no'){
@@ -16,12 +17,13 @@ function manageData(){
 				arr.push(name);
 				setCrudData(arr);
 			}
-			document.getElementById('msg').innerHTML='task added';
+			document.getElementById('msg').innerHTML='Data added';
 		}else{
 			let arr=getCrudData();
 			arr[id]=name;
 			setCrudData(arr);
-			document.getElementById('msg').innerHTML='task updated';
+			document.getElementById('msg').innerHTML='Data updated';
+			location.reload();
 		}
 		document.getElementById('name').value='';
 		selectData();
